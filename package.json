@@ -1,0 +1,23 @@
+{
+  "name": "angular-materializecss-autocomplete",
+  "version": "1.0.0",
+  "description": "Angular directive to create autocompletes with [materialize-css](http://materializecss.com/)",
+  "main": "angular-materializecss-autocomplete.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosflorencio/angular-materializecss-autocomplete.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcosflorencio/angular-materializecss-autocomplete/issues"
+  },
+  "homepage": "https://github.com/marcosflorencio/angular-materializecss-autocomplete#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-wiredep": "^3.0.1"
+  }
+}

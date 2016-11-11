@@ -1,0 +1,23 @@
+{
+  "name": "angular-materializecss-autocomplete",
+  "main": [
+    "angular-materializecss-autocomplete.js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "materialize": "^0.97.8"
+  },
+  "homepage": "https://github.com/marcosflorencio/angular-materializecss-autocomplete",
+  "authors": [
+    "dstepbw <dstepbw@gmail.com>"
+  ],
+  "description": ""
+}

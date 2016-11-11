@@ -1,5 +1,6 @@
 {
   "name": "angular-materializecss-autocomplete",
+   "version": "0.0.1",
   "main": [
     "angular-materializecss-autocomplete.js"
   ],

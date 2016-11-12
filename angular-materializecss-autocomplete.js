@@ -31,7 +31,8 @@
       + '</ng-form>')
   }
 
-  function autoComplete() {
+  autoComplete.$inject = ['$q']
+  function autoComplete($q) {
     var directive = {
       restrict: 'E',
       scope: {
@@ -68,8 +69,13 @@
 
       function modelChanged(model) {
         scope.closed = false
-        scope.itens = scope.func()
         callIfDefined(scope.onModelChanged, model)
+        
+        $q.when(scope.func(model))
+        .then(function(response){
+           scope.itens = response
+        })
+
       }
 
       function iconPrefixDefined() {

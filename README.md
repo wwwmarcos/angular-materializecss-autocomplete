@@ -9,9 +9,7 @@ Angular directive to create autocompletes with [materialize-css](http://material
 ## npm
 `npm i angular-materializecss-autocomplete`
 
-
-## Or 
-[Download](http://github.com/marcosflorencio/angular-materializecss-autocomplete/zipball/master/) files and import the files in your index.  
+Import the file in your index.  
   
 ```html
  <script src="app/angular-materializecss-autocomplete.js"></script>

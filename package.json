@@ -1,6 +1,6 @@
 {
   "name": "angular-materializecss-autocomplete",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Angular directive to create autocompletes with [materialize-css](http://materializecss.com/)",
   "main": "angular-materializecss-autocomplete.js",
   "scripts": {

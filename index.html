@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Angular-materializecss-autocomplete by marcosflorencio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Angular-materializecss-autocomplete</h1>
+      <h2 class="project-tagline">Angular directive to create autocompletes with materialize-css</h2>
+      <a href="https://github.com/marcosflorencio/angular-materializecss-autocomplete" class="btn">View on GitHub</a>
+      <a href="https://github.com/marcosflorencio/angular-materializecss-autocomplete/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/marcosflorencio/angular-materializecss-autocomplete/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="angular-materializecss-autocomplete" class="anchor" href="#angular-materializecss-autocomplete" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>angular-materializecss-autocomplete</h1>
+
+<p>Angular directive to create autocompletes with <a href="http://materializecss.com/">materialize-css</a></p>
+
+<h1>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h1>
+
+<h2>
+<a id="bower" class="anchor" href="#bower" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bower</h2>
+
+<p><code>bower install angular-materializecss-autocomplete</code></p>
+
+<h2>
+<a id="npm" class="anchor" href="#npm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>npm</h2>
+
+<p><code>npm i angular-materializecss-autocomplete</code></p>
+
+<p>Import the file in your index.  </p>
+
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-s1"> &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>app/angular-materializecss-autocomplete.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span></pre></div>
+
+<p>Declare a dependency on principal module  </p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">angular</span>.<span class="pl-en">module</span>(<span class="pl-s"><span class="pl-pds">'</span>myModule<span class="pl-pds">'</span></span>, [<span class="pl-s"><span class="pl-pds">'</span>angularMaterializeAutoComplete<span class="pl-pds">'</span></span>]);</pre></div>
+
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h1>
+
+<p>In your view declare the directive  </p>
+
+<div class="highlight highlight-text-html-basic"><pre>  &lt;<span class="pl-ent">auto</span><span class="pl-e">-complete</span> <span class="pl-e">model</span>=<span class="pl-s"><span class="pl-pds">"</span>vm.cidade<span class="pl-pds">"</span></span> <span class="pl-e">func</span>=<span class="pl-s"><span class="pl-pds">"</span>vm.getDragons<span class="pl-pds">"</span></span> <span class="pl-e">property</span>=<span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span> <span class="pl-e">icon-prefix</span>=<span class="pl-s"><span class="pl-pds">"</span>textsms<span class="pl-pds">"</span></span> <span class="pl-e">label</span>=<span class="pl-s"><span class="pl-pds">"</span>olosco<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">auto</span><span class="pl-e">-complete</span>&gt;</pre></div>
+
+<h2>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Options:</h2>
+
+<table>
+<thead>
+<tr>
+<th>Atributte</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>model <code>'='</code>
+</td>
+<td>true</td>
+<td>Model of input</td>
+</tr>
+<tr>
+<td>label <code>'@'</code>
+</td>
+<td>true</td>
+<td>Label of input</td>
+</tr>
+<tr>
+<td>func <code>'&amp;'</code>
+</td>
+<td>true</td>
+<td>Function to return data (promisse or array)</td>
+</tr>
+<tr>
+<td>iconPrefix <code>'@'</code>
+</td>
+<td>false</td>
+<td>Incon of input</td>
+</tr>
+<tr>
+<td>property <code>'@'</code>    </td>
+<td>true    </td>
+<td>Property of data object display in search</td>
+</tr>
+<tr>
+<td>onModelChanged <code>'&amp;'</code>
+</td>
+<td>false</td>
+<td>A callback executed when a match is selected</td>
+</tr>
+<tr>
+<td>validadeObject <code>'&amp;'</code>
+</td>
+<td>false    </td>
+<td><a href="https://github.com/marcosflorencio/angular-materializecss-autocomplete/issues/4">in progress</a></td>
+</tr>
+<tr>
+<td>limit <code>'@'</code>
+</td>
+<td>false</td>
+<td><a href="https://github.com/marcosflorencio/angular-materializecss-autocomplete/issues/6">in progress</a></td>
+</tr>
+</tbody>
+</table>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/marcosflorencio/angular-materializecss-autocomplete">Angular-materializecss-autocomplete</a> is maintained by <a href="https://github.com/marcosflorencio">marcosflorencio</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>

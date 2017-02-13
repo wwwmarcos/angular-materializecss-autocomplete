@@ -35,7 +35,8 @@ In your view declare the directive
 | func `'&'`          | true      | Function to return data (promisse or array) |
 | iconPrefix `'@'`    | false     | Incon of input|
 | property `'@'`      | true      | Property of data object display in search|
-| onModelChanged `'&'`| false     | A callback executed when a match is selected|
+| onSelect  `'&'`     | false     | A callback executed when a match is selected|
+| onModelChanged `'&'`| false     | A callback executed on model change|
 | validadeObject `'&'`| false     | [in progress](https://github.com/marcosflorencio/angular-materializecss-autocomplete/issues/4) |
 | limit `'@'`         | false     | [in progress](https://github.com/marcosflorencio/angular-materializecss-autocomplete/issues/6)|
 
